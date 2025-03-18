@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.house-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.house {
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#imageSlider {
+    position: relative;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  .slider-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 300%;
+  }
+  .slider-container img {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 0 100%;
+    object-fit: cover;
+  }
+  #prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff9900;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #prevBtn { left: 10px; }
+  #nextBtn { right: 10px; }
+  
